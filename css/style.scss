@@ -1,3 +1,5 @@
+@import "libs/reset.scss";
+
 body{
     background-color: red;
 
@@ -6,4 +8,28 @@ body{
 p{
     margin: 1rem;
 
+}
+
+.table {
+    width: 100%;
+    td{
+    border: solid 1px #CCC;
+}
+}
+
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }

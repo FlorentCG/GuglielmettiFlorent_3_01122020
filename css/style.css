@@ -1,4 +1,38 @@
 body {
   background-color: red;
 }
+
+p {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  border: solid 1px #CCC;
+}
+
+.btn {
+  background: #011c37;
+  color: #15DEA5;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
 /*# sourceMappingURL=style.css.map */
