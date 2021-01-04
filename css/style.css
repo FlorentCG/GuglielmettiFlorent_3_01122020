@@ -51,30 +51,73 @@ td:not([align]), th:not([align]) {
 
 body {
   font-size: 16px;
+  font-family: "roboto", sans-serif;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo a {
+  width: 70%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+  color: #150753b9;
+}
+
+.titles {
+  background-color: #f2f2f2;
+  display: block;
+  padding-bottom: 3rem;
+  height: 100%;
 }
 
 .search {
   border: none;
-  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
-          box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
+  -webkit-box-shadow: 1rem 0rem 0rem 0rem #bdc3c7;
+          box-shadow: 1rem 0rem 0rem 0rem #bdc3c7;
   overflow: hidden;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  background-color: #1f1c1c17;
 }
 
 .search .location .fa-map-marker-alt {
   padding: 25px;
-  background-color: #e5e5e5;
+  background-color: #f2f2f217;
   color: black;
 }
 
 .search input {
   border: none;
   font-size: 18px;
+  background-color: #f2f2f217;
+  font-weight: bold;
 }
 
 .input.text {
@@ -82,38 +125,56 @@ body {
   color: black;
 }
 
-.explore {
-  border-radius: 999px;
-  display: inline-block;
-  padding-right: 1rem;
-  -webkit-box-shadow: 0.1rem 0 0.1rem 0.1rem #bdc3c7;
-          box-shadow: 0.1rem 0 0.1rem 0.1rem #bdc3c7;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-  font-weight: bold;
-  margin-right: 1rem;
+.restaurant {
+  display: block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem;
+  background-color: #f2f2f2;
 }
 
-.explore input.text {
-  border: none;
+.explore {
+  border-radius: 999px;
+  padding: 1rem;
+  -webkit-box-shadow: 0.1rem 0 0.1rem 0.1rem #bdc3c7;
+          box-shadow: 0.1rem 0 0.1rem 0.1rem #bdc3c7;
+  color: white;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  text-align: center;
+  margin-right: 23%;
+  margin-left: 23%;
+}
+
+.choice {
+  display: block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+.choice_titre p {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .choice_text {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #f2f2f2;
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
           box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
   overflow: hidden;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 1rem;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-weight: bold;
 }
 
 .choice_text i.fas {
   padding: 25px;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   color: black;
 }
 
@@ -123,14 +184,14 @@ body {
   -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
           box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .listings_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   width: 100%;
   height: auto;
   -webkit-box-orient: vertical;
@@ -139,6 +200,14 @@ body {
           flex-direction: column;
   padding: 0.5em;
   border-radius: 1rem 1rem 0% 0%;
+}
+
+.listings_content p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .listings_item {
@@ -156,5 +225,44 @@ body {
   height: 100%;
   width: 100%;
   max-width: 100%;
+}
+
+.greyText {
+  font-weight: bold;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.stars {
+  float: right;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.stars i.far.fa-heart {
+  float: right;
+  font-size: 2rem;
+}
+
+footer {
+  background-color: black;
+  padding-bottom: 1rem;
+}
+
+.footer-logo a img {
+  padding: 1rem;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  width: 33%;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
