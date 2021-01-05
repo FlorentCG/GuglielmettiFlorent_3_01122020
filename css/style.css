@@ -188,26 +188,27 @@ h2 {
 }
 
 .listings_content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  height: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0.5em;
   border-radius: 1rem 1rem 0% 0%;
 }
 
-.listings_content p {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 /2;
-  -ms-grid-row: 2;
-  grid-row: 2;
+.description {
+  max-width: 50%;
+}
+
+.description p {
+  color: #cec9c9;
+}
+
+.description .greyText {
+  font-weight: bold;
 }
 
 .listings_item {
@@ -227,15 +228,6 @@ h2 {
   max-width: 100%;
 }
 
-.greyText {
-  font-weight: bold;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 /2;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
 .stars {
   float: right;
   -ms-grid-row: 1;
@@ -243,9 +235,50 @@ h2 {
   grid-row-end: 3;
 }
 
-.stars i.far.fa-heart {
+.stars i.fal.fa-heart {
   float: right;
   font-size: 2rem;
+  -webkit-transition: #9356DC 0.3s;
+  transition: #9356DC 0.3s;
+}
+
+.stars i.fal.fa-heart:hover {
+  color: #9356DC;
+  fill: #9356DC;
+}
+
+.toggle-icons {
+  display: block;
+  position: relative;
+}
+
+.toggle-icons .icon {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: opacity .25s ease-in;
+  transition: opacity .25s ease-in;
+}
+
+.toggle-icons .icon-default {
+  opacity: 1.0;
+}
+
+/* set the icon we want to only show on hover or focus to be hidden by default */
+.toggle-icons .icon-hover {
+  opacity: 0;
+}
+
+.toggle-icons:hover .icon-default,
+.toggle-icons:focus .icon-default {
+  opacity: 0;
+}
+
+.toggle-icons:hover .icon-hover,
+.toggle-icons:focus .icon-hover {
+  opacity: 1.0;
 }
 
 footer {
@@ -264,5 +297,57 @@ footer {
   text-decoration: none;
   color: white;
   padding: 1rem;
+}
+
+/*Page de resto*/
+.nomResto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.titreResto .nomResto h1 {
+  font-family: Shrikhand;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.typeEntree {
+  border-radius: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
+          box-shadow: 0.1rem 0.1rem 0.1rem #bdc3c7;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5em;
+}
+
+.typeEntree p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 /2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  float: right;
+}
+
+.choixPlat {
+  background-color: #f2f2f2;
+}
+
+.entree, .plat, .dessert {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

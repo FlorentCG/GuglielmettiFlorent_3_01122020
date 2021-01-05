@@ -125,19 +125,24 @@ h2{
   }
 
 .listings_content{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  display:flex;
+  justify-content: space-between;
   width: 100%;
-  height: auto;
-  flex-direction: column;
   padding: 0.5em;
   border-radius: 1rem 1rem 0% 0%;
-    p{
-      grid-column: 1 /2;
-      grid-row: 2;
-  }
 }
-  
+
+.description{
+  max-width: 50%;
+  p{
+    color: rgb(206, 201, 201);
+  }
+  .greyText{
+    font-weight: bold;
+    
+  }
+
+}
   .listings_item{
     position: relative;
     overflow: hidden;
@@ -154,23 +159,55 @@ h2{
     max-width: 100%;
   }
 
-.greyText{
-  font-weight: bold;
-  grid-column: 1 /2;
-  grid-row: 1;
-}
+
 
   .stars{
   float:right;
   grid-row-start: 1; 
   grid-row-end: 3;
-    i.far.fa-heart{
+    i.fal.fa-heart{
     float:right;
     font-size: 2rem;
+    transition: $color-primary .3s;
+    &:hover{
+      color:$color-primary;
+      fill:$color-primary;
+    }
   }
 } 
+.toggle-icons {
+  display: block;
+  position: relative;
+ 
+}
+.toggle-icons .icon {
+  position: absolute;
+  top:50%;
+  right: 10%;
+  transform: translate(-50%,-50%);
+  transition: opacity .25s ease-in;
+}
 
-  footer{
+.toggle-icons .icon-default {
+  opacity: 1.0;
+}
+
+
+.toggle-icons .icon-hover {
+  opacity: 0;
+}
+
+.toggle-icons:hover .icon-default, 
+.toggle-icons:focus .icon-default {
+  opacity: 0;
+}
+
+.toggle-icons:hover .icon-hover, 
+.toggle-icons:focus .icon-hover {
+  opacity: 1.0;
+}
+
+footer{
     background-color:black;
     padding-bottom:1rem;
   }
@@ -187,3 +224,46 @@ h2{
   color:white;
   padding:1rem ;  
 }
+
+/*Page de resto*/
+
+.nomResto{
+  display: flex;
+}
+
+.titreResto .nomResto h1{
+  font-family:Shrikhand ;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.typeEntree{
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
+  width: 100%;
+  margin-bottom: 1rem;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+  flex-direction: column;
+  padding: 0.5em;
+    p{
+      grid-column: 1 /2;
+      grid-row: 2;
+      float:right;
+    }
+    
+}
+
+.choixPlat{
+  background-color:#f2f2f2;
+}
+
+.entree, .plat, .dessert{
+  background-color:#f2f2f2;
+  padding: 2rem;
+  display: block;
+}
+
