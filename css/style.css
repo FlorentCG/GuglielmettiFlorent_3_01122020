@@ -170,12 +170,49 @@ h2 {
   width: 100%;
   background-color: #f2f2f2;
   font-weight: bold;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .choice_text i.fas {
   padding: 25px;
   background-color: #f2f2f2;
   color: black;
+}
+
+.choice_text p {
+  max-width: 60%;
+}
+
+.circle {
+  position: relative;
+  max-height: 1.5rem;
+  bottom: -33%;
+  left: -3%;
+}
+
+.cercle {
+  overflow: visible;
+  font-size: 1rem;
+  border: solid 1px;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left: -3%;
+  color: #9356DC;
+  line-height: 2rem;
+  text-align: center;
+  backgroundcolor: #9356DC;
+}
+
+.cercle p {
+  max-width: 100%;
 }
 
 .main_content_resto {
@@ -228,25 +265,6 @@ h2 {
   max-width: 100%;
 }
 
-.stars {
-  float: right;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.stars i.fal.fa-heart {
-  float: right;
-  font-size: 2rem;
-  -webkit-transition: #9356DC 0.3s;
-  transition: #9356DC 0.3s;
-}
-
-.stars i.fal.fa-heart:hover {
-  color: #9356DC;
-  fill: #9356DC;
-}
-
 .toggle-icons {
   display: block;
   position: relative;
@@ -263,22 +281,22 @@ h2 {
 }
 
 .toggle-icons .icon-default {
-  opacity: 1.0;
+  opacity: 0;
 }
 
-/* set the icon we want to only show on hover or focus to be hidden by default */
 .toggle-icons .icon-hover {
-  opacity: 0;
+  opacity: 1.00;
 }
 
 .toggle-icons:hover .icon-default,
 .toggle-icons:focus .icon-default {
-  opacity: 0;
+  opacity: 1.0;
+  color: #9356DC;
 }
 
 .toggle-icons:hover .icon-hover,
 .toggle-icons:focus .icon-hover {
-  opacity: 1.0;
+  opacity: 0;
 }
 
 footer {
@@ -325,11 +343,34 @@ footer {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   height: auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0.5em;
+  position: relative;
+}
+
+.typeEntree:hover p {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.typeEntree:hover .check {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 1;
+}
+
+.typeEntree:hover .check i.far.fa-check-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
 }
 
 .typeEntree p {
@@ -339,6 +380,24 @@ footer {
   -ms-grid-row: 2;
   grid-row: 2;
   float: right;
+}
+
+.check {
+  opacity: 0;
+  position: absolute;
+  padding: 1rem;
+  right: -11%;
+  background-color: green;
+}
+
+keyframes slidein from {
+  -webkit-transform: translate(1, 1);
+          transform: translate(1, 1);
+}
+
+keyframes slidein to {
+  -webkit-transform: scale(0.5, 1);
+          transform: scale(0.5, 1);
 }
 
 .choixPlat {

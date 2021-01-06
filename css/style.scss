@@ -109,13 +109,48 @@ h2{
     width: 100%;
     background-color: #f2f2f2;
     font-weight: bold;
+    overflow: visible;
+    display: flex;
+    align-items: center;
     i.fas{
         padding: 25px;
         background-color: #f2f2f2;
         color:black;
       }
+    p{
+      max-width: 60%;
+    }
 }
 
+.circle{
+  position: relative;
+  max-height: 1.5rem;
+  bottom:-33%;
+  left:-3%;
+
+}
+
+.cercle {
+  overflow: visible;
+  font-size: 1rem;
+  border: solid 1px;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left:-3%;
+ 
+  color: $color-primary;
+  line-height: 2rem;
+  text-align: center;
+  backgroundcolor: $color-primary;
+   p{
+     max-width: 100%;
+    
+
+   }
+
+}
 .main_content_resto{
     border-radius: 1rem;
     background-color: white;
@@ -161,20 +196,7 @@ h2{
 
 
 
-  .stars{
-  float:right;
-  grid-row-start: 1; 
-  grid-row-end: 3;
-    i.fal.fa-heart{
-    float:right;
-    font-size: 2rem;
-    transition: $color-primary .3s;
-    &:hover{
-      color:$color-primary;
-      fill:$color-primary;
-    }
-  }
-} 
+
 .toggle-icons {
   display: block;
   position: relative;
@@ -189,22 +211,22 @@ h2{
 }
 
 .toggle-icons .icon-default {
-  opacity: 1.0;
+  opacity: 0;
 }
 
-
 .toggle-icons .icon-hover {
-  opacity: 0;
+  opacity: 1.00;
 }
 
 .toggle-icons:hover .icon-default, 
 .toggle-icons:focus .icon-default {
-  opacity: 0;
+  opacity: 1.0;
+  color: $color-primary;
 }
 
 .toggle-icons:hover .icon-hover, 
 .toggle-icons:focus .icon-hover {
-  opacity: 1.0;
+  opacity: 0;
 }
 
 footer{
@@ -247,14 +269,54 @@ footer{
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   height: auto;
-  flex-direction: column;
   padding: 0.5em;
-    p{
+  position:relative;
+   &:hover p{
+    transform: translateX(-50px);
+    transition-duration: 1s;
+   }
+   &:hover .check{
+
+    transform: translateX(-50px) ;
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  opacity:1;
+    i.far.fa-check-circle{
+      transform: rotate(360deg);
+      transition-duration: 0.7s;
+    }
+  }
+    .prix{
       grid-column: 1 /2;
       grid-row: 2;
       float:right;
     }
     
+}
+
+.compoPlat{
+  max-width: 50%;
+}
+
+.check{
+ 
+  opacity: 0;
+  position: absolute;
+  padding: 1rem;
+  right:-11%;
+  background-color:green;
+  
+}
+
+keyframes slidein {
+  from {
+    transform: translate(1, 1);
+  }
+
+  to {
+    transform: scale(0.5,1);
+  }
 }
 
 .choixPlat{
