@@ -68,6 +68,11 @@ body {
   width: 70%;
 }
 
+.logoTop {
+  padding: 1rem;
+  width: 70%;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -159,6 +164,7 @@ h2 {
   text-align: center;
   margin-right: 23%;
   margin-left: 23%;
+  cursor: pointer;
 }
 
 .choice {
@@ -191,6 +197,11 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.choice_text:hover {
+  cursor: pointer;
+  background: #c283c2;
 }
 
 .choice_text i.fas {
@@ -278,6 +289,14 @@ h2 {
   max-width: 100%;
 }
 
+.new {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 10%;
+  right: 4%;
+  padding: 0.5rem;
+}
+
 .toggle-icons {
   display: block;
   position: relative;
@@ -330,13 +349,21 @@ footer {
   padding: 1rem;
 }
 
+.fa-utensils, .fa-handshake {
+  padding: 0 0 0 1rem;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  width: 2rem;
+}
+
 /*Page de resto*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .arrow {
