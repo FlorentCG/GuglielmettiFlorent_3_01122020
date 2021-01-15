@@ -4,6 +4,7 @@
     position: absolute;
     top: 62%; 
     width: 100%;
+    
   
   .nomResto h1{
     font-family:Shrikhand ;
@@ -90,3 +91,26 @@
     padding: 2rem;
     display: block;
   }
+
+.entree{
+  animation-duration:1s;
+  animation-name:fadeMenu;
+  opacity:0; 
+  animation-fill-mode:forwards;
+}
+
+.plat{
+  animation-duration:1s;
+  animation-name:fadeMenu;
+  animation-delay:1s;
+  opacity:0; 
+  animation-fill-mode:forwards;
+}
+
+.dessert{
+  animation-duration:1s;
+  animation-name:fadeMenu;
+  animation-delay:2s;
+  opacity:0; 
+  animation-fill-mode:forwards;
+}

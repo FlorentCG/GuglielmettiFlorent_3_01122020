@@ -4,8 +4,17 @@ html{
 body{
   font-size:16px;
   font-family: "roboto", sans-serif;
-}
   
+  
+}
+
+globalPage{
+  animation-duration: 3s;
+  animation-name: section;
+  
+
+}
+
 .logo{
   display:flex;
   padding:1rem 1rem 1rem 0rem;;
@@ -26,7 +35,10 @@ body{
     font-weight: bold;
     text-align: center;
     padding:1rem 1rem 1rem 1rem;
+    
+  
   }
+  
   
   h2{
     font-size:1.5rem;
@@ -50,7 +62,7 @@ body{
     width:9%;
     margin:0;
     border-bottom:solid ;
-    color:$color-tertiary;
+    color: #99E2D0;
     }
   }
   
@@ -114,24 +126,12 @@ body{
       .heart{
         margin-left: auto;
         padding-right: 1rem;
+       
       }
     
   }
-  
- 
-  keyframes slidein {
-    from {
-      transform: translate(1, 1);
-    }
-  
-    to {
-      transform: scale(0.5,1);
-    }
-  }
-  
-  
-  
-
-  
+@media (min-width:992px){
+  h1{background-color: blue};
+}
 }
       
