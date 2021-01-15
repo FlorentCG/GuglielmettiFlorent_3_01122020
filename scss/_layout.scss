@@ -131,7 +131,10 @@ globalPage{
     
   }
 @media (min-width:992px){
-  h1{background-color: blue};
+  h1{padding: 5rem};
+  .restaurant {display: flex};
+  .main_content_resto {margin:1rem};  
 }
+
 }
       
