@@ -19,8 +19,13 @@ globalPage{
   display:flex;
   padding:1rem 1rem 1rem 0rem;;
   justify-content: center;
+  
     a {
         width: 70%; 
+        display: block;
+        img{
+          display: block;
+        }
   }
 }
   
@@ -107,6 +112,7 @@ globalPage{
   header{
     display: flex;
     justify-content: center;
+    align-items:center;
   }
   
   .arrow{
