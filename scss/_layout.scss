@@ -17,7 +17,7 @@ globalPage{
 
 .logo{
   display:flex;
-  padding:1rem 1rem 1rem 0rem;;
+  padding:1rem 2rem 1rem 0rem;
   justify-content: center;
   
     a {
@@ -49,7 +49,7 @@ globalPage{
     font-size:1.5rem;
     text-align: center;
     padding:1rem 1rem 1rem 1rem;
-    color:#150753b9;
+    color:$font-grey;
   }
   .titles{
     background-color:#f2f2f2;
@@ -119,6 +119,7 @@ globalPage{
     padding:1rem 1rem 1rem 0rem;
     .fa-arrow-left{
       padding: 0.5rem;
+      padding-left: 1rem;
     }
   }
   

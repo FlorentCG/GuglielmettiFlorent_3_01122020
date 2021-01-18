@@ -50,6 +50,7 @@ align-items: center;
     
     .prix{
       margin:auto 1rem 1rem auto;
+      font-weight: bold;  
     }
     
     
@@ -70,7 +71,12 @@ align-items: center;
     text-overflow: "...";
     overflow:hidden;
     white-space:nowrap;
-   
+    p{
+      font-weight: bold;
+    }
+    span{
+      color:$font-grey;
+    }
     
   }
   

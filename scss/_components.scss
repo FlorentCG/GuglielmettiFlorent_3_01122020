@@ -1,3 +1,7 @@
+.arrow a i.fas{
+  color:black;
+}
+
 .search{
     border: none;
     box-shadow: 1rem 0rem 0rem 0rem rgba(189, 195, 199, 1);
@@ -91,13 +95,7 @@
           }
       }
       
-      .circle{
-        position: relative;
-        max-height: 1.5rem;
-        bottom:-33%;
-        left:-3%;
       
-      }
       
       .cercle {
         overflow: visible;
@@ -108,13 +106,14 @@
         height: 2rem;
         position: relative;
         left:-3%;
-       
+        background-color:$color-primary;
         color: $color-primary;
         line-height: 2rem;
         text-align: center;
         
          p{
            max-width: 100%;
+           color: white;
           
       
          }
