@@ -93,7 +93,7 @@ globalPage{
     -webkit-filter:invert(1); 
     filter: invert(1); 
     width: 33%;
-  }
+    }
   } 
   .list ul li a{
     text-decoration: none;
@@ -115,28 +115,27 @@ globalPage{
     align-items:center;
   }
   
-  .arrow{
-    padding:1rem 1rem 1rem 0rem;
-    .fa-arrow-left{
-      padding: 0.5rem;
-      padding-left: 1rem;
+.arrow{
+  padding:1rem 1rem 1rem 0rem;
+  .fa-arrow-left{
+    padding: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+  
+.imagetop{
+  position: relative;
+}
+  
+.nomResto{
+  display: flex;
+  align-items: center;
+    .heart{
+      margin-left: auto;
+      padding-right: 1rem;
     }
-  }
-  
-  .imagetop{
-    position: relative;
-  }
-  
-  .nomResto{
-    display: flex;
-    align-items: center;
-      .heart{
-        margin-left: auto;
-        padding-right: 1rem;
-       
-      }
-    
-  }
+}
+
 @media (min-width:$screen-lg-min){
   h1{
     padding: 3rem;
@@ -249,40 +248,40 @@ globalPage{
   .entree, .plat, .dessert{
     width: 50%;
   }
-  }
+}
 
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
    
-    .logoTop{
-      width:auto;
-    }
-   
-    .restaurant {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin:1rem;
-      border-radius:1rem; 
-    }
-    .main_content_resto {
-      margin:1rem;
-      max-width: 45%;
-    }
-    
-    
+  .logoTop{
+    width:auto;
+  }
   
-    .choice{
-      display: flex;
-      flex-direction:column;
-      align-items:center;
-        
-    }
-    .choice_text{
-      width: 50%;
-    }
-    footer{
-      padding-right:1rem;
-    }
-    }
+  .restaurant {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:1rem;
+    border-radius:1rem; 
+  }
+  .main_content_resto {
+    margin:1rem;
+    max-width: 45%;
+  }
+  
+  
+
+  .choice{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+      
+  }
+  .choice_text{
+    width: 50%;
+  }
+  footer{
+    padding-right:1rem;
+  }
+  }
 }
       

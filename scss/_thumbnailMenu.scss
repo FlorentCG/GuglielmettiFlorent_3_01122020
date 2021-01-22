@@ -41,66 +41,62 @@ align-items: center;
   }
   
   .typeEntree{
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
-    width: 100%;
-    margin-bottom: 1rem;
-    display:flex; 
-    
-    .prix{
-      margin:auto 1rem 1rem auto;
-      font-weight: bold;  
+      border-radius: 1rem;
+      background-color: white;
+      box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
+      width: 100%;
+      margin-bottom: 1rem;
+      display:flex; 
+
+      .prix{
+        margin:auto 1rem 1rem auto;
+        font-weight: bold;  
     }
-    
-    
-    
-     
-  
-      
-  }
+
+
+
+
+
+}
   .composant{
-    text-overflow: "...";
-    overflow:hidden;
-    white-space:nowrap;
+      text-overflow: "...";
+      overflow:hidden;
+      white-space:nowrap;
   }
   .compoPlat{
-    display:flex;
-    flex-direction: column;
-    margin: 1rem;
-    text-overflow: "...";
-    overflow:hidden;
-    white-space:nowrap;
-    p{
-      font-weight: bold;
+      display:flex;
+      flex-direction: column;
+      margin: 1rem;
+      text-overflow: "...";
+      overflow:hidden;
+      white-space:nowrap;
+      p{
+        font-weight: bold;
     }
     span{
-      color:$font-grey;
+        color:$font-grey;
     }
-    
-  }
-  
-  .check{
-    
-    width: 0;
-   
-        border-radius:0 1rem 1rem 0;  
-    background-color:$color-tertiary;
-    overflow: hidden;
-      i.fas.fa-check-circle{
-        color:white;
-        overflow: hidden;
-        
-      }
-  }
-  .choixPlat{
-    background-color:#f2f2f2;
-  }
 
-  .entree, .plat, .dessert{
-    background-color:#f2f2f2;
-    padding: 2rem;
-    display: block;
+}
+  .check{
+
+      width: 0;
+
+          border-radius:0 1rem 1rem 0;  
+      background-color:$color-tertiary;
+      overflow: hidden;
+        i.fas.fa-check-circle{
+          color:white;
+          overflow: hidden;
+
+      }
+}
+  .choixPlat{
+      background-color:#f2f2f2;
+    .entree, .plat, .dessert{
+      background-color:#f2f2f2;
+      padding: 2rem;
+      display: block;
   }
 
 .entree{
@@ -124,4 +120,5 @@ align-items: center;
   animation-delay:2s;
   opacity:0; 
   animation-fill-mode:forwards;
+  }
 }

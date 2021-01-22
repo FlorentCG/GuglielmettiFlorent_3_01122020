@@ -7,22 +7,21 @@
 }
 
 .listings_content{
-display:flex;
-justify-content: space-between;
-width: 100%;
-padding: 0.5em;
-border-radius: 1rem 1rem 0% 0%;
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 1rem 1rem 0% 0%;
 }
 
 .description{
 max-width: 50%;
-p{
+  p{
   color: rgb(206, 201, 201);
-}
-.greyText{
+  }
+  .greyText{
   font-weight: bold;
-  
-}
+  }
 
 }
 .listings_item{
@@ -36,52 +35,47 @@ p{
 .listings_image{
   border-radius: 1rem 1rem 0% 0%;
   object-fit: cover;
-  
   width: 100%;
 }
 
 .new{
-position: absolute;
-background-color:$color-tertiary;
-top: 10%;
-right: 4%;
-padding: 0.5rem;
-color:forestgreen;
-font-weight: bold;
+  position: absolute;
+  background-color:$color-tertiary;
+  top: 10%;
+  right: 4%;
+  padding: 0.5rem;
+  color:forestgreen;
+  font-weight: bold;
 }
-
-
-
 
 .toggle-icons {
-display: block;
-position: relative;
-
+  display: block;
+  position: relative;
 }
 .toggle-icons .icon {
-position: absolute;
-top:50%;
-right: 10%;
-transform: translate(-50%,-50%);
-transition: opacity .25s ease-in;
+  position: absolute;
+  top:50%;
+  right: 10%;
+  transform: translate(-50%,-50%);
+  transition: opacity .25s ease-in;
 }
 
 .toggle-icons .icon-default {
-opacity: 0;
+  opacity: 0;
 }
 
 .toggle-icons .icon-hover {
-opacity: 1.00;
-cursor: pointer;
+  opacity: 1.00;
+  cursor: pointer;
 }
 
 .toggle-icons:hover .icon-default, 
 .toggle-icons:focus .icon-default {
-opacity: 1.0;
-color: $color-primary;
+  opacity: 1.0;
+  color: $color-primary;
 }
 
 .toggle-icons:hover .icon-hover, 
 .toggle-icons:focus .icon-hover {
-opacity: 0;
+  opacity: 0;
 }
