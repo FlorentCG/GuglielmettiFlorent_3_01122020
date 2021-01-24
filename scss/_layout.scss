@@ -13,7 +13,12 @@ body{
   animation-duration: 3s;
   
 }
-
+.globalMenu{
+  z-index:+10;
+  padding: 1rem;
+  position: relative;
+  margin-top:-20%;
+}
 .logo{
   display:flex;
   padding:1rem 2rem 1rem 0rem;
@@ -169,14 +174,16 @@ body{
     padding-right:1rem;
   }
    /*Design page resto*/
+   .globalMenu{
+    z-index:+10;
+    padding: 1rem;
+    position: relative;
+    margin-top:-20%;
+  }
    .arrow .fa-arrow-left{
     display:none;
   }
-  .globalMenu{
-    top:180%;
-    padding: 1rem;
-    
-  }
+ 
   .globalPlat{
     display: flex;
     flex-wrap:wrap;
@@ -233,9 +240,10 @@ body{
     display:none;
   }
   .globalMenu{
-    top:180%;
+    z-index:+10;
     padding: 1rem;
-    
+    position: relative;
+    margin-top:-20%;
   }
   .globalPlat{
     display: block;

@@ -1,9 +1,7 @@
 .globalMenu {
     background-color: #f2f2f2;
     border-radius: 3rem 3rem 0 0;
-    position: absolute;
-    top: 62%; 
-    width: 100%;
+    
     
   
   .nomResto h1{
@@ -16,15 +14,36 @@
   }
   
 .platContent{
-  display: flex;
+  text-overflow: "...";
+overflow: hidden;
+white-space: nowrap;
+margin: 0.5rem;
+p{
+  font-weight: bold;
+
+}
+span{
+  color:$font-grey;
+}
+}
+  
+  .typeEntree{
+      border-radius: 1rem;
+      background-color: white;
+      box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
+      margin-bottom: 1rem;
+      display:flex; 
+
+      .prix{
+        font-weight: bold;  
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 0.5rem;    
+    }
+
     &:hover .check{
-      width: 20%;
-      transition-duration: 0.7s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 20%;  
+      
     
       i.fas.fa-check-circle{
         transform: rotate(360deg);
@@ -34,54 +53,38 @@
       }
       
     }
-  }
-  
-  .typeEntree{
-      border-radius: 1rem;
-      background-color: white;
-      box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
-      width: 100%;
-      margin-bottom: 1rem;
-      display:flex; 
-
-      .prix{
-        margin:auto 1rem 1rem auto;
-        font-weight: bold;  
-    }
-
-
 
 
 
 }
-  .composant{
-      text-overflow: "...";
-      overflow:hidden;
-      white-space:nowrap;
-  }
+  
   .compoPlat{
       display:flex;
-      flex-direction: column;
+      white-space: nowrap;
       margin: 1rem;
       text-overflow: "...";
-      overflow:hidden;
-      white-space:nowrap;
-      p{
-        font-weight: bold;
-    }
-    span{
-        color:$font-grey;
-    }
+      width: 100%;
+      
+      
+    
 
 }
   .check{
+    margin-left: 1rem;
   width: 0;
   border-radius:0 1rem 1rem 0;  
     background-color:$color-tertiary;
     overflow: hidden;
+    
+    transition-duration: 0.7s;
+      transition-timing-function: ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       i.fas.fa-check-circle{
         color:white;
         overflow: hidden;
+        
    }
 }
 .choixPlat{
@@ -91,15 +94,8 @@
       padding: 2rem;
       display: block;
 }
-
-.entree{
-  animation-duration:1s;
-  animation-name:fadeMenu;
-  opacity:0; 
-  animation-fill-mode:forwards;
 }
-
-.plat{
+.entree{
   animation-duration:1s;
   animation-name:fadeMenu;
   animation-delay:1s;
@@ -107,11 +103,18 @@
   animation-fill-mode:forwards;
 }
 
-.dessert{
+.plat{
   animation-duration:1s;
   animation-name:fadeMenu;
   animation-delay:2s;
   opacity:0; 
   animation-fill-mode:forwards;
-  }
 }
+
+.dessert{
+  animation-duration:1s;
+  animation-name:fadeMenu;
+  animation-delay:3s;
+  opacity:0; 
+  animation-fill-mode:forwards;
+  }

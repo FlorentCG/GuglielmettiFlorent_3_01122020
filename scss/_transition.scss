@@ -9,7 +9,7 @@
   to { opacity:1; } 
 }
 
-.fade-in {
+fade-in {
   opacity:0;  
   animation:fadeMenu ease-in 1;
   animation-fill-mode:forwards;
@@ -18,6 +18,7 @@
 
         
 .loader {
+  
   animation:spin 2.5s  linear 1 forwards;
   border:solid 2vmin transparent;
   border-radius:50%;
@@ -30,6 +31,8 @@
   top:calc(50% - 10vmin);
   width:20vmin;
   z-index:1;
+  background-color: white;
+  
     &:before {
       animation:spin 2.5s  linear 1 forwards;
       border:solid 2vmin transparent;
@@ -68,6 +71,7 @@
   100% {           
   transform:rotate(360deg);
   opacity: 0;
+  display:none;
   }     
 }
 
