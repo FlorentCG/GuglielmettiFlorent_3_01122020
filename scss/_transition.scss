@@ -18,7 +18,6 @@ fade-in {
 
         
 .loader {
-  
   animation:spin 2.5s  linear 1 forwards;
   border:solid 2vmin transparent;
   border-radius:50%;
@@ -32,7 +31,6 @@ fade-in {
   width:20vmin;
   z-index:1;
   background-color: white;
-  
     &:before {
       animation:spin 2.5s  linear 1 forwards;
       border:solid 2vmin transparent;
@@ -75,4 +73,5 @@ fade-in {
   }     
 }
 
-    
+
+

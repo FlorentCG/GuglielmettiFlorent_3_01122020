@@ -1,0 +1,179 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+ 
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+ 
+// Tablets and small desktops
+$screen-lg-min: 1024px;
+ 
+// Large tablets and desktops
+$screen-xl-min: 1224px;
+
+// Very large  desktops
+$screen-xxl-min: 2560px;
+
+@mixin for-size($size) {
+    @if $size == phone-only {
+      @media (max-width:599px) { @content; }
+    } @else if $size == tablet-portrait-up {
+      @media (min-width: 600px) and (max-width:1024px) { @content; }
+    } @else if $size == desktop-up {
+      @media (min-width: 1024px) { @content; }
+    } @else if $size == big-desktop-up {
+      @media (min-width: 1800px) { @content; }
+    }
+  }
+
+@include for-size(tablet-portrait-up) {
+    h1{
+      padding: 3rem;
+      background-color:blue;
+    }
+    .logoTop{
+        width:auto;
+    }
+    
+    .restaurant {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin:1rem;
+        border-radius:1rem; 
+      }
+      .main_content_resto {
+        margin:1rem;
+        max-width: 45%;
+      }
+    .titres{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+  
+    .choice{
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+        
+    }
+    .choice_text{
+      width: 50%;
+    }
+    footer{
+      padding-right:1rem;
+    }
+     /*Design page resto*/
+
+     .arrow .fa-arrow-left{
+      display:none;
+    }
+    .globalPlat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .platContent{
+        width: 100%;
+      }
+      .entree, .plat, .dessert{
+        width: 50%;
+      }
+    
+  
+  }
+  
+  @include for-size(desktop-up) {
+    h1{
+      padding: 3rem;
+      background-color:red;
+    }
+    .restaurant {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin:1rem;
+        border-radius:1rem; 
+      }
+      .main_content_resto {
+        margin:1rem;
+        max-width: 45%;
+      }
+  
+    
+    
+    .titres{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+  
+    .choice{
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+        
+    }
+    .choice_text{
+      width: 50%;
+      padding: 0.5rem;
+margin: 0.5rem;
+    }
+    footer{
+      padding-right:1rem;
+    }
+  
+    /*Design page resto*/
+    .arrow .fa-arrow-left{
+      display:none;
+    }
+
+    
+    .globalPlat{
+        display: flex;
+
+flex-wrap: wrap;
+justify-content: space-around;
+      }
+      .platContent{
+        width: 100%;
+      }
+      .entree, .plat, .dessert{
+        width: 50%;
+        padding: 1rem;
+      }
+  }
+  
+  @include for-size(big-desktop-up) {
+     
+    .logoTop{
+      width:auto;
+    }
+    
+    .restaurant {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin:1rem;
+      border-radius:1rem; 
+      
+    }
+    .main_content_resto {
+      margin:1rem;
+      max-width: 45%;
+    }
+    
+    
+  
+    .choice{
+      display: flex;
+      flex-direction:column;
+      align-items:center;
+        
+    }
+    .choice_text{
+      width: 50%;
+    }
+    footer{
+      padding-right:1rem;
+    }
+    }
