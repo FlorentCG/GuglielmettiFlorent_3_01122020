@@ -55,7 +55,7 @@ max-width: 50%;
 .toggle-icons .icon {
   position: absolute;
   top:50%;
-  right: 10%;
+  padding-right:2rem ;
   transform: translate(-50%,-50%);
   transition: opacity .25s ease-in;
 }
