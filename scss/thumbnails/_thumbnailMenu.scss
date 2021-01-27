@@ -1,100 +1,81 @@
 .globalMenu {
-    background-color: #f2f2f2;
-    border-radius: 3rem 3rem 0 0;
-    
-    
-  
+  background-color: #f2f2f2;
+  border-radius: 3rem 3rem 0 0;
   .nomResto h1{
     font-family:Shrikhand ;
     font-size: 2rem;
     text-align: left;
-    font-weight: normal;
-    
+    font-weight: normal;  
   }
-  }
+}
   
 .platContent{
   text-overflow: "...";
-overflow: hidden;
-white-space: nowrap;
-margin: 0.5rem;
-p{
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.5rem;
+    p{
   font-weight: bold;
-
-}
-span{
+  }
+  span{
   color:$font-grey;
-}
+  }
 }
   
-  .typeEntree{
-      border-radius: 1rem;
-      background-color: white;
-      box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
-      margin-bottom: 1rem;
-      display:flex; 
-
-      .prix{
-        font-weight: bold;  
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: 0.5rem;    
+.typeEntree{
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(189, 195, 199, 1);
+  margin-bottom: 1rem;
+  display:flex; 
+    .prix{
+      font-weight: bold;  
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: 0.5rem;    
     }
-
     &:hover .check{
       width: 20%;  
-      
-    
       i.fas.fa-check-circle{
         transform: rotate(360deg);
-        transition-duration: 0.7s;
-       
-        
-      }
-      
+        transition-duration: 0.7s; 
+      } 
     }
-
-
-
 }
   
-  .compoPlat{
-      display:flex;
-      white-space: nowrap;
-      margin: 1rem;
-      text-overflow: "...";
-      width: 100%;
-      
-      
-    
-
+.compoPlat{
+  display:flex;
+  white-space: nowrap;
+  margin: 1rem;
+  text-overflow: "...";
+  width: 100%;
 }
-  .check{
-    margin-left: 1rem;
+  
+.check{
+  margin-left: 1rem;
   width: 0;
   border-radius:0 1rem 1rem 0;  
-    background-color:$color-tertiary;
-    
-    
-    transition-duration: 0.7s;
-      transition-timing-function: ease-in-out;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      i.fas.fa-check-circle{
-        color:white;
-        overflow: hidden;
-        
+  background-color:$color-tertiary;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    i.fas.fa-check-circle{
+      color:white;
+      overflow: hidden;  
    }
 }
+
 .choixPlat{
   background-color:#f2f2f2;
     .entree, .plat, .dessert{
       background-color:#f2f2f2;
       padding: 2rem;
       display: block;
+  }
 }
-}
+
 .entree{
   padding:1rem;
   animation-duration:1s;
@@ -120,4 +101,4 @@ span{
   animation-delay:3s;
   opacity:0; 
   animation-fill-mode:forwards;
-  }
+}

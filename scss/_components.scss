@@ -3,124 +3,113 @@
 }
 
 .search{
-    border: none;
-    box-shadow: 1rem 0rem 0rem 0rem rgba(189, 195, 199, 1);
-    overflow: hidden;
-    display: inline-flex;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color:#1f1c1c17;
-    .location .fa-map-marker-alt{
-      padding: 25px;
-      background-color:#f2f2f217;
-      color:black;
-    }
+  border: none;
+  box-shadow: 1rem 0rem 0rem 0rem rgba(189, 195, 199, 1);
+  overflow: hidden;
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color:#1f1c1c17;
+  .location .fa-map-marker-alt{
+    padding: 25px;
+    background-color:#f2f2f217;
+    color:black;
   }
+}
     
-  .search input{
-      border: none;
-      font-size: 18px;
-      background-color:#f2f2f217;
-      font-weight: bold;
-      cursor:pointer;
-  }
+.search input{
+  border: none;
+  font-size: 18px;
+  background-color:#f2f2f217;
+  font-weight: bold;
+  cursor:pointer;
+}
     
-  .input.text{
-      font-weight: bold;
-      color:black;
-      
-    }
+.input.text{
+  font-weight: bold;
+  color:black; 
+}
 
-    .explore{
-        border-radius: 999px;
-        padding:1rem ;
-        box-shadow:  0.1rem 0 0.1rem 0.1rem  rgba(189, 195, 199, 1);
-        color:white;
-        font-weight: bold;
-        background: linear-gradient($color-secondary, $color-primary);
-        text-align: center;
-        margin-right: 23%;
-        margin-left: 23%;
-        cursor: pointer;
-          &:hover{
-            filter: brightness(1.1);
-            box-shadow: 0.1rem 0 0.2rem 0.2rem rgb(165, 170, 173);
-            transition: all 1s ease;
-            
-          }
+.explore{
+  border-radius: 999px;
+  padding:1rem ;
+  box-shadow:  0.1rem 0 0.1rem 0.1rem  rgba(189, 195, 199, 1);
+  color:white;
+  font-weight: bold;
+  background: linear-gradient($color-secondary, $color-primary);
+  text-align: center;
+  margin-right: 23%;
+  margin-left: 23%;
+  cursor: pointer;
+    &:hover{
+      filter: brightness(1.1);
+      box-shadow: 0.1rem 0 0.2rem 0.2rem rgb(165, 170, 173);
+      transition: all 1s ease;
+
+    }
+}
+
+.choice{
+  display: block;
+  justify-content: space-around;
+  padding: 2rem 1rem 2rem 2rem;
+}
+
+.choice_titre p{
+  font-weight: bold;
+  font-size:1.5rem;
+}
+
+.choice_text{
+  border: 0.5px solid #f2f2f2;
+  box-shadow: 0.2rem 0.2rem 0.2rem #e3eef5;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+  width: 100%;
+  font-weight: bold;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+  transition-timing-function: ease-in-out;
+    &:hover{
+      cursor: pointer;
+      background: transparentize( $color-primary, 0.5);
+        i.fas{
+        color:$color-primary;
       }
+}
+
+i.fas{
+  padding: 25px;
+  background-color: #11ffee00;
+  color:gray;
+  }
+  p{
+  max-width: 60%;
+  }
+}
+
+.cercle {
+  overflow: visible;
+  font-size: 1rem;
+  border: solid 1px;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left:-3%;
+  background-color:$color-primary;
+  line-height: 2rem;
+  text-align: center;
+    p{
+       max-width: 100%;
+       color: white;
       
-      .choice{
-        display: block;
-        justify-content: space-around;
-        padding: 2rem 1rem 2rem 2rem;
-          
-      }
-      
-      .choice_titre p{
-        font-weight: bold;
-        font-size:1.5rem;
-      }
-      
-      .choice_text{
-          border: 0.5px solid #f2f2f2;
-          box-shadow: 0.2rem 0.2rem 0.2rem #e3eef5;
-          overflow: hidden;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          border-radius: 1rem;
-          width: 100%;
-          background-color: #f2f2f2;
-          font-weight: bold;
-          overflow: visible;
-          display: flex;
-          align-items: center;
-          transition: all 1s;
-              transition-timing-function: ease-in-out;
-            &:hover{
-              cursor: pointer;
-              background: transparentize( $color-primary, 0.5) ;
-              
-              i.fas{
-                color:$color-primary;
-              }
-            }
-          i.fas{
-              padding: 25px;
-              background-color: #11ffee00;
-              color:gray;
-              
-              
-            }
-          p{
-            max-width: 60%;
-          }
-      }
-      
-      
-      
-      .cercle {
-        overflow: visible;
-        font-size: 1rem;
-        border: solid 1px;
-        border-radius: 50%;
-        width: 2rem;
-        height: 2rem;
-        position: relative;
-        left:-3%;
-        background-color:$color-primary;
-        color: $color-primary;
-        line-height: 2rem;
-        text-align: center;
-        
-         p{
-           max-width: 100%;
-           color: white;
-          
-      
-         }
-      
-      }
-      
+     }
+}
+
       
