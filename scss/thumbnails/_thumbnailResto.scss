@@ -17,7 +17,7 @@
 .description{
 max-width: 50%;
   p{
-  color: rgb(206, 201, 201);
+  color: $font-grey;
   }
   .greyText{
   font-weight: bold;
@@ -57,25 +57,33 @@ max-width: 50%;
   top:50%;
   padding-right:2rem ;
   transform: translate(-50%,-50%);
-  transition: opacity .25s ease-in;
+  transition: opacity 0.75s ease-in-out;
+
 }
 
 .toggle-icons .icon-default {
   opacity: 0;
+  
+
 }
 
 .toggle-icons .icon-hover {
   opacity: 1.00;
   cursor: pointer;
+  
+    
 }
 
 .toggle-icons:hover .icon-default, 
 .toggle-icons:focus .icon-default {
   opacity: 1.0;
   color: $color-primary;
+  text-shadow: 0 0 10px $color-tertiary;
+    
 }
 
 .toggle-icons:hover .icon-hover, 
 .toggle-icons:focus .icon-hover {
   opacity: 0;
+  
 }
